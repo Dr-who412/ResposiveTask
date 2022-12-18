@@ -1,7 +1,10 @@
+import 'dart:convert';
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 Widget gridItem({
-  required Widget icon,
+  required String? image,
   required String lable,
 })=>Container(
 decoration: BoxDecoration(
@@ -24,11 +27,26 @@ boxShadow: [
 
 child: Column(
 crossAxisAlignment: CrossAxisAlignment.center,
-mainAxisAlignment: MainAxisAlignment.center,
+mainAxisAlignment: MainAxisAlignment.end,
+mainAxisSize: MainAxisSize.min,
 children: [
-icon,
-SizedBox(height: 4,),
-Text(lable,),
+  SizedBox(height: 6,),
+  Expanded(
+    flex: 3,
+    child: Container(
+      clipBehavior: Clip.hardEdge,
+      decoration: BoxDecoration(
+        color: Colors.black12,
+        shape: BoxShape.circle,
+      ),
+      child: base64Decode(image.toString()).isEmpty
+          ?  Icon(Icons.image,color: Colors.black54,)
+          : Image.memory(base64Decode(image.toString()), ),
+    ),
+  ),
+Expanded(
+    flex: 1,
+    child: Text(lable,)),
 ],
 ),
 );

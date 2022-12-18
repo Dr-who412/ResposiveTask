@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "997717290609",
+    "project_id": "puertask-c82b4",
+    "storage_bucket": "puertask-c82b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997717290609:android:de8ad656a60472415475d0",
+        "android_client_info": {
+          "package_name": "com.example.puresofttask1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997717290609-75vj2gsvhqf538gc6nidugcrtdpoivek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFDQJyjgbi5eLsdWn_hDl-YMYrJlQqKDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997717290609-75vj2gsvhqf538gc6nidugcrtdpoivek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
